@@ -28,6 +28,25 @@ function playGame()
 				if (confirm("Knight\n\nEquiped with some shiney armour, and a really sharp (but pretty heavy) sword.\n\nStats:\n  HP: 125\n  Strength: 100\n  Speed: 75"))
 				{
 					window.alert("Good choice!\nBut keep up, because you are pretty slow.");
+					window.alert("Where would you like to start?")
+					if (confirm("Main Entrance\n(Will be most likely gaurded or booby trapped)"))
+					{
+						window.alert("Ok, be prepared to fight")
+					}
+					else 
+					{
+						if (confirm("Back Entrance\n(It will take us a while to get there.)"))
+						{
+							window.alert("Fine... we will take the long way.")
+						}
+						else
+						{
+							if (confirm("The Secret Entrance\n(I don't think there is one...)"))
+							{
+								window.alert("Ok, Lets start looking for it then.")
+							}
+						}
+					}
 				}
 			}
 		}
