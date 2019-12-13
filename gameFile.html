@@ -25,9 +25,32 @@ function playGame()
 			{
 				window.alert("Good choice!");
 				window.alert("Choose a character.\nTo choose the character press Ok, or Cancel to pick another")
-				if (confirm("Knight\n\nEquiped with some shiney armour, and a really sharp (but pretty heavy) sword.\n\nStats:\n  HP: 125\n  Strength: 100\n  Speed: 75"))
+				if (confirm("Knight\n\nEquiped with some shiney armour, and a really sharp (but pretty heavy) sword.\n\nStats:\n  HP: 125\n  Strength: 100\n  Speed: 75\n  Intelligence: 50"))
 				{
 					window.alert("Good choice!\nBut keep up, because you are pretty slow.");
+					window.alert("Where would you like to start?")
+					if (confirm("Main Entrance\n(Will be most likely gaurded or booby trapped)"))
+					{
+						window.alert("Ok, be prepared to fight")
+					}
+					else 
+					{
+						if (confirm("Back Entrance\n(It will take us a while to get there.)"))
+						{
+							window.alert("Fine... we will take the long way.")
+						}
+						else
+						{
+							if (confirm("The Secret Entrance\n(I don't think there is one...)"))
+							{
+								window.alert("Ok, Lets start looking for it then.")
+							}
+						}
+					}
+				}
+				if (confirm("Archer\n\nEquiped with a long bow and can almost silently kill their enemys. But they wear no armour.\n\nStats:\n  HP: 75\n  Strength: 90\n  Speed: 110\n  Intelligence: 50")) 
+				{
+					window.alert("Good choice!\nBut stay a safe distance away from your enemies, you have very little protection.");
 					window.alert("Where would you like to start?")
 					if (confirm("Main Entrance\n(Will be most likely gaurded or booby trapped)"))
 					{
